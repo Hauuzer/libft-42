@@ -24,6 +24,7 @@ typedef struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+char				*ft_itoa(int n);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -74,6 +75,8 @@ char				*ft_strjoin(char const *s1, char const *s2);
 size_t				ft_strlcat(char *restrict dst,
 					const char *restrict src, size_t size);
 int					ft_strlen(const char *str);
+char				*ft_strmap(char const *s, char (*f)(char));
+char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *big,
